@@ -1,5 +1,7 @@
 # SEUIF97
 
+ (PySEE Version:Windows only)
+
 **Purpose:** Provide a high-speed shared library for developers to calculate the properties of water and steam  in extensive process simulations, such as Computational Fluid Dynamics (CFD), heat cycle calculations, simulations of non-stationary processes, and real-time process optimizations, where the direct IAPWS-IF97 implementation may be unsuitable because of their computing time consumption.
  
  Through the high-speed library, the results of the IAPWS-IF97  are accurately produced at above 3 times computational speed.
@@ -8,32 +10,17 @@
 
         王培红,贾俊颖,程懋华. 水和水蒸汽热力性质IAPWS-IF97公式的通用计算模型[J]. 动力工程. 2001 21(6)：1564-1567(EI)
  
- This library is written in ANSI C for faster, smaller binaries and better compatibility for accessing the DLL/SO from different C++ compilers.
- 
- For Windows and Linux users, convenient binary packages are provided.
- 
-         IF97 shared library: Windows(32/64):libseuif97.dll, Linux(64):libseuif97.so
- 
- The package includes bindings for Python, Microsoft Excel. 
-        
-        Python API：seuif97.py
-        
-        Microsoft Excel Macro: DEMO_SEUIF97.xlsm,SEUIF97.xlam
- 
+  
 **Author:** Cheng Maohua, Southeast University, Nanjing，China  (cmh@seu.edu.cn)
 
-# [API](/api)
-
-   Windows and Linux
+# [ Windows API](/api)
 
 * Python API: **seuif97.py** 
 
 * C API: **seuif97.h** 
 
-# Using shared library
+# Using shared library(Windows32/64) 
 
-## Windows32/64 
-  
 1. copy **libseuif97.dll**  to a default path of Windows dll
       
         C:\Windows\system
@@ -41,17 +28,7 @@
 2. copy **seuif97.py** to a default path of Python lib
     
         C:\Python35\Lib 
-   
-##  Linux64   
-    
- 1. copy **libseuif97.so**  to a default path of Linux shared lib
-   
-        $ sudo cp libseuif97.so /usr/lib/
-
- 2. copy **seuif97.py** to a default path of Python lib
-   
-        $ sudo cp seuif97.py /usr/lib/python3.5/
-        
+       
 ## [Demo Python](./demo-python)
 
 ```python
@@ -68,9 +45,8 @@ h=seuif97.pt2h(p,t)
 
   ![T-s Diagram](./doc/T-s.jpg)
 
-## [Demo with GCC](./demo-gcc)  
 
-* demo.c      
+## [Demo GCC](./demo-gcc)
 
 ```c
 #include <stdio.h>
@@ -78,25 +54,18 @@ h=seuif97.pt2h(p,t)
 
 #include "seuif97.h"
 
-int main(void) {
+int main(void)
+{
 
-    double p=16.13;
-    double t=535;
+    double p = 16.13;
+    double t = 535;
     double h;
 
-    h=seupt(p,t,4);
-    printf("(p,t) (%f,%f) h= %f",p,t,h);
+    h = seupt(p, t, 4);
+    printf("(p,t) (%f,%f) h= %f \n", p, t, h);
     return EXIT_SUCCESS;
 }
 ```
-
-## [ExcelVBA32/64](./ExcelVBA)
-
-* Excel Add-in Macro:SEUIF97.xlam
-
-* Excel VBA:  DEMO_SEUIF97.xlsm
-
-* Guide: SEUIF97_Add-in.doc(Chinese)
 
 # SEUIF97 shared library
 
