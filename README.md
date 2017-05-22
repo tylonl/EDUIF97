@@ -39,7 +39,7 @@ h=seuif97.pt2h(p,t)
 
  * **Diagram_T-S.py**
 
-  ![T-s Diagram](./doc/T-s.jpg)
+  ![T-s Diagram](./img/T-s.jpg)
 
 
 ## [Demo GCC](./demo-gcc)
