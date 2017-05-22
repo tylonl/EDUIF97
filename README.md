@@ -1,6 +1,6 @@
 # SEUIF97 (Educational Edition:Windows)
 
- Through the high-speed library, the results of the IAPWS-IF97  are accurately produced at above 3 times computational speed.
+ The high-speed library in written in ANSI C, through the library, the results of the IAPWS-IF97  are accurately produced at above 3 times computational speed.
  
         Algorithm of the High-speed IAPWS-IF97 Library: 
 
