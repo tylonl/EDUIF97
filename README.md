@@ -1,9 +1,7 @@
 # SEUIF97
 
- (PySEE Version:Windows only)
+ (Educational Edition:Windows)
 
-**Purpose:** Provide a high-speed shared library for developers to calculate the properties of water and steam  in extensive process simulations, such as Computational Fluid Dynamics (CFD), heat cycle calculations, simulations of non-stationary processes, and real-time process optimizations, where the direct IAPWS-IF97 implementation may be unsuitable because of their computing time consumption.
- 
  Through the high-speed library, the results of the IAPWS-IF97  are accurately produced at above 3 times computational speed.
  
         Algorithm of the High-speed IAPWS-IF97 Library: 
@@ -15,9 +13,9 @@
 
 # [ Windows API](/api)
 
-* Python API: **seuif97.py** 
+* Python: **seuif97.py** 
 
-* C API: **seuif97.h** 
+* C: **seuif97.h** 
 
 # Using shared library(Windows32/64) 
 
