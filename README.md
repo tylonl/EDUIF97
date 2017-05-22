@@ -1,6 +1,4 @@
-# SEUIF97
-
- (Educational Edition:Windows)
+# SEUIF97 (Educational Edition:Windows)
 
  Through the high-speed library, the results of the IAPWS-IF97  are accurately produced at above 3 times computational speed.
  
