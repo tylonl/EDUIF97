@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from ctypes import *
-from platform import *
 
 flib = windll.LoadLibrary('libseuif97.dll')
 prototype = WINFUNCTYPE(c_double, c_double, c_double, c_int)
