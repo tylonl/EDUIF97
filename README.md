@@ -9,7 +9,7 @@
   
 **Author:** Cheng Maohua, Southeast University, Nanjing，China  (cmh@seu.edu.cn)
 
-# [ Windows API](/api)
+# [API(Windows)](/api)
 
 * Python: **seuif97.py** 
 
@@ -42,7 +42,7 @@ h=seuif97.pt2h(p,t)
   ![T-s Diagram](./img/T-s.jpg)
 
 
-## [Demo GCC](./demo-gcc)
+## [Demo MinGW-w64 GCC](./demo-gcc)
 
 ```c
 #include <stdio.h>
